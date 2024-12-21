@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Merry Christmas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <script>
+    for (let i = 0; i < 100; i++) {
+      const snowflake = document.createElement('img');
+      snowflake.src = 'images/snowflake.png';
+      snowflake.className = 'snowflake';
+      snowflake.style.left = `${Math.random() * window.innerWidth}px`;
+      snowflake.style.animationDuration = `${Math.random() * 3 + 2}s`;
+      snowflake.style.opacity = Math.random();
+      document.body.appendChild(snowflake);
+    }
+  </script>
+  <h1>Merry Christmas!</h1>
+  <img src="images/snowflake.png" alt="snowflake" class="snowflake">
+</body>
+</html>

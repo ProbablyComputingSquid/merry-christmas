@@ -1,0 +1,29 @@
+.snowflake {
+    /*--rand: 0;
+    --leftpos: calc(100vw * var(--rand));*/
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    width: 7vh;
+    height: 7vh;
+    animation: fall 5s linear infinite;
+}
+@keyframes fall {
+    0% {
+        transform: translateY(-10vh) translateX(0);
+    }
+    25% {
+        transform: translateY(20vh) translateX(5vw);
+    }
+    50% {
+        transform: translateY(45vh) translateX(11vw);
+    }
+    75% {
+        transform: translateY(75vh) translateX(13vw);
+    }
+    100% {
+        transform: translateY(100vh) translateX(15vw);
+    }
+}
